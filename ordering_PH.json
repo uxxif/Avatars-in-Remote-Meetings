@@ -1,0 +1,42 @@
+{
+  "keysOrder": [
+    "Meeting Environment",
+    "Platform Type",
+    "Meeting Size",
+    "Avatar Generation",
+    "Visualization Type",
+    "Avatar Embodiment",
+    "Verbal Communication",
+    "Non-verbal Communication",
+    "Outcome"
+  ],
+  "groups": [
+    {
+      "name": "Context",
+      "keys": ["Meeting Environment", "Platform Type", "Meeting Size"]
+    },
+    {
+      "name": "Avatar Design & Representation",
+      "keys": ["Avatar Generation", "Visualization Type", "Avatar Embodiment"]
+    },
+    {
+      "name": "Communication Modalities",
+      "keys": ["Verbal Communication", "Non-verbal Communication"]
+    },
+    {
+      "name": "Results",
+      "keys": ["Outcome"]
+    }
+  ],
+  "buttonsOrder": {
+    "Meeting Environment": ["Professional", "Educational", "Private", "Not Available"],
+    "Platform Type": ["Desktop-Tool", "Extended-Reality"],
+    "Meeting Size": ["Dyad", "Small (3–5 People)", "Large (>6 People)"],
+    "Avatar Generation": ["Reconstructed Model Avatar", "User-Created Avatar", "Not Available"],
+    "Visualization Type": ["Cartoon", "Realistic", "Other Person"],
+    "Avatar Embodiment": ["Head only", "Full Body", "Upper Body"],
+    "Verbal Communication": ["Natural Voice", "Synthesized Voice", "No Voice"],
+    "Non-verbal Communication": ["Facial Expressions", "Movement and Gesture", "Eye Gaze", "Eye Blink", "Lip Syncing"],
+    "Outcome": ["Engagement", "Social Anxiety", "Presence", "Individual Well-Being"]
+  }
+}
