@@ -47,7 +47,6 @@ async function loadOrderingData() {
 }
 
 // Render the table with the given data
-// Render the table with the given data
 function renderTable(data) {
     const noDataMessage = document.getElementById('no-data-message');
 
@@ -57,6 +56,8 @@ function renderTable(data) {
         noDataMessage.style.display = 'none';
     }
 
+
+
     tableBody.innerHTML = data.map(paper => {
         let displayDOI;
         if (paper.DOI_URL.startsWith('https://doi.org/')) {
@@ -65,19 +66,63 @@ function renderTable(data) {
             displayDOI = paper.DOI_URL.slice(0, 30) + '...';
         }
 
+        // "Meeting_environment_note"
+        if (paper.Meeting_environment_note === undefined) {
+            Meeting_environment_note_display = "";
+        } else {
+            Meeting_environment_note_display = paper.Meeting_environment_note;
+        }
+
+        // "Meeting_size_note"
+        if (paper.Meeting_size_note === undefined) {
+            Meeting_size_note_display = "";
+        } else {
+            Meeting_size_note_display = paper.Meeting_size_note;
+        }
+
+        // "Visualization_type_note"
+        if (paper.Visualization_type_note === undefined) {
+            Visualization_type_note_display = "";
+        } else {
+            Visualization_type_note_display = paper.Visualization_type_note;
+        }
+
+        // "Platform_type_note"
+        if (paper.Platform_type_note === undefined) {
+            Platform_type_note_display = "";
+        } else {
+            Platform_type_note_display = paper.Platform_type_note;
+        }
+
+        // "Non-verbal Communication"
+        if (paper.Non_verbal_communication_note === undefined) {
+            Non_verbal_communication_note_display = "";
+        } else {
+            Non_verbal_communication_note_display = paper.Non_verbal_communication_note;
+        }
+
+        if (paper.Outcome_note === undefined) {
+            Outcome_note_display = "";
+        } else {
+            Outcome_note_display = paper.Outcome_note;
+        }
         return `
-            <tr>
-                <td>${paper.Author}</td>
-                <td>${paper.Year}</td>
-                <td>${paper.Title}</td>
-                <td><a href="${paper.DOI_URL}" target="_blank">${displayDOI}</a></td>
-                <td>${paper["Non-verbal Communication"]}</td>
-                <td>${paper["Outcome"]}</td>
-            </tr>
-        `;
+      <tr>
+        <td>${paper.Author}</td>
+        <td>${paper.Year}</td>
+        <td>${paper.Title}</td>
+        <td><a href="${paper.DOI_URL}" target="_blank">${displayDOI}</a></td>
+        <td>${Meeting_environment_note_display}</td>
+        <td>${Meeting_size_note_display}</td>
+        <td>${Visualization_type_note_display}</td>
+        <td>${Platform_type_note_display}</td>
+        <td>${Non_verbal_communication_note_display}</td>
+        <td>${Outcome_note_display}</td>
+      </tr>
+    `;
     }).join('');
 
-    // Add event listeners for hover highlight
+    // Add event listeners
     tableBody.querySelectorAll('tr').forEach((row) => {
         row.addEventListener('mouseover', () => {
             const rowData = data[row.sectionRowIndex];
@@ -91,7 +136,6 @@ function renderTable(data) {
         });
     });
 }
-
 
 // Create filter groups based on the provided data and ordering
 function createFilters(jsonData, orderingData) {

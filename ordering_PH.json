@@ -10,6 +10,17 @@
     "Non-verbal Communication",
     "Outcome"
   ],
+  "buttonsOrder": {
+  "Meeting Environment": ["Professional", "Educational", "Private", "Not Available", "Multiple"],
+  "Platform Type": ["Desktop-Tool", "Extended-Reality"],
+  "Meeting Size": ["Dyad", "Small (3–5 People)", "Large (>6 People)", "Multiple"],
+  "Avatar Generation": ["Reconstructed Model Avatar", "User-Created Avatar", "Not Available"],
+  "Visualization Type": ["Cartoon", "Realistic", "Other Person"],
+  "Avatar Embodiment": ["Head only", "Full Body", "Upper Body"],
+  "Verbal Communication": ["Natural Voice", "Synthesized Voice", "No Voice"],
+  "Non-verbal Communication": ["Facial Expressions", "Movement and Gesture", "Eye Gaze", "Eye Blink", "Lip Syncing", "Multiple"],
+  "Outcome": ["Engagement", "Social Anxiety", "Presence", "Individual Well-Being", "Multiple"]
+  },
   "groups": [
     {
       "name": "Context",
@@ -27,16 +38,5 @@
       "name": "Results",
       "keys": ["Outcome"]
     }
-  ],
-  "buttonsOrder": {
-    "Meeting Environment": ["Professional", "Educational", "Private", "Not Available"],
-    "Platform Type": ["Desktop-Tool", "Extended-Reality"],
-    "Meeting Size": ["Dyad", "Small (3–5 People)", "Large (>6 People)"],
-    "Avatar Generation": ["Reconstructed Model Avatar", "User-Created Avatar", "Not Available"],
-    "Visualization Type": ["Cartoon", "Realistic", "Other Person"],
-    "Avatar Embodiment": ["Head only", "Full Body", "Upper Body"],
-    "Verbal Communication": ["Natural Voice", "Synthesized Voice", "No Voice"],
-    "Non-verbal Communication": ["Facial Expressions", "Movement and Gesture", "Eye Gaze", "Eye Blink", "Lip Syncing"],
-    "Outcome": ["Engagement", "Social Anxiety", "Presence", "Individual Well-Being"]
-  }
+  ]
 }

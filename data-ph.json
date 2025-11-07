@@ -12,7 +12,8 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Movement and Gesture, Eye Gaze, Eye Blink",
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Movement and Gesture, Eye Gaze, Eye Blink",
         "Outcome": "Presence"
     },
     {
@@ -28,8 +29,9 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Full Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Movement and Gesture",
-        "Outcome": "Engagement, Presence"
+        "Non_verbal_communication": "Movement and Gesture",
+        "Outcome": "Multiple",
+        "Outcome_note": "Engagement, Presence"
     },
     {
         "id": 3,
@@ -44,7 +46,8 @@
         "Visualization Type": "Cartoon ",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Eye Gaze",
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Eye Gaze",
         "Outcome": "Presence"
     },
     {
@@ -60,8 +63,10 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Full Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Eye Gaze, Lip Syncing",
-        "Outcome": "Engagement, Presence"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Eye Gaze, Lip Syncing",
+        "Outcome": "Multiple",
+        "Outcome_note": "Engagement, Presence"
     },
     {
         "id": 5,
@@ -71,13 +76,17 @@
         "DOI_URL": "https://doi.org/10.1145/3491101.3519628",
         "Meeting Environment": "Professional",
         "Platform Type": "Extended-Reality",
-        "Meeting Size": "Dyad, Small (3-5 People)",
+        "Meeting Size": "Multiple",
+        "Meeting_size_note": "Dyad, Small (3-5 People)",
         "Avatar Generation": "Reconstructed Model Avatar",
-        "Visualization Type": "Cartoon, Realistic",
+        "Visualization Type": "Multiple",
+        "Visualization_type_note": "Cartoon, Realistic",
         "Avatar Embodiment": "Full Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Eye Blink, Lip Syncing",
-        "Outcome": "Engagement, Presence"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Eye Blink, Lip Syncing",
+        "Outcome": "Multiple",
+        "Outcome_note": "Engagement, Presence"
     },
     {
         "id": 6,
@@ -89,11 +98,14 @@
         "Platform Type": "Desktop-Tool",
         "Meeting Size": "Large (>6 People)",
         "Avatar Generation": "User-Created Avatar",
-        "Visualization Type": "Cartoon, Realistic",
+        "Visualization Type": "Multiple",
+        "Visualization_type_note": "Cartoon, Realistic",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Eye Blink, Lip Syncing",
-        "Outcome": "Social Anxiety, Presence"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Eye Blink, Lip Syncing",
+        "Outcome": "Multiple",
+        "Outcome_note": "Social Anxiety, Presence"
     },
     {
         "id": 7,
@@ -105,11 +117,14 @@
         "Platform Type": "Extended-Reality",
         "Meeting Size": "Dyad",
         "Avatar Generation": "Reconstructed Model Avatar",
-        "Visualization Type": "Cartoon, Realistic",
+        "Visualization Type": "Multiple",
+        "Visualization_type_note":"Cartoon, Realistic",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Movement and Gesture, Lip Syncing",
-        "Outcome": "Engagement, Presence"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Movement and Gesture, Lip Syncing",
+        "Outcome": "Multiple",
+        "Outcome_note": "Engagement, Presence"
     },
     {
         "id": 8,
@@ -124,8 +139,9 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Full Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Not Available",
-        "Outcome": "Engagement, Presence, Individual Well-Being"
+        "Non_verbal_communication": "Not Available",
+        "Outcome": "Multiple",
+        "Outcome_note": "Engagement, Presence, Individual Well-Being"
     },
     {
         "id": 9,
@@ -134,14 +150,17 @@
         "Year": 2023,
         "DOI_URL": "https://doi.org/10.1145/3604279",
         "Meeting Environment": "Not Available",
-        "Platform Type": "Desktop-Tool, Extended-Reality",
+        "Platform Type": "Multiple",
+        "Platform_type_note": "Desktop-Tool, Extended-Reality",
         "Meeting Size": "Small (3-5 People)",
         "Avatar Generation": "Reconstructed Model Avatar",
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Movement and Gesture, Eye Gaze, Eye Blink",
-        "Outcome": "Engagement, Presence"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Movement and Gesture, Eye Gaze, Eye Blink",
+        "Outcome": "Multiple",
+        "Outcome_note": "Engagement, Presence"
     },
     {
         "id": 10,
@@ -156,8 +175,10 @@
         "Visualization Type": "Realistic",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Eye Gaze, Eye Blink",
-        "Outcome": "Engagement, Presence"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Eye Gaze, Eye Blink",
+        "Outcome": "Multiple",
+        "Outcome_note": "Engagement, Presence"
     },
     {
         "id": 11,
@@ -172,8 +193,10 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Movement and Gesture, Eye Gaze, Eye Blink",
-        "Outcome": "Engagement, Presence"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Movement and Gesture, Eye Gaze, Eye Blink",
+        "Outcome": "Multiple",
+        "Outcome_note":"Engagement, Presence"
     },
     {
         "id": 12,
@@ -188,8 +211,10 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Movement and Gesture, Eye Gaze, Lip Syncing",
-        "Outcome": "Engagement, Presence"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Movement and Gesture, Eye Gaze, Lip Syncing",
+        "Outcome": "Multiple",
+        "Outcome_note": "Engagement, Presence"
     },
     {
         "id": 13,
@@ -204,8 +229,10 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Synthesized Voice",
-        "Non-verbal Communication": "Facial Expressions, Eye Blink",
-        "Outcome": "Engagement, Social Anxiety, Presence, Individual Well-Being"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Eye Blink",
+        "Outcome": "Multiple",
+        "Outcome_note": "Engagement, Social Anxiety, Presence, Individual Well-Being"
     },
     {
         "id": 14,
@@ -220,8 +247,10 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Movement and Gesture",
-        "Outcome": "Social Anxiety, Individual Well-Being"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Movement and Gesture",
+        "Outcome": "Multiple",
+        "Outcome_note": "Social Anxiety, Individual Well-Being"
     },
     {
         "id": 15,
@@ -236,7 +265,8 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "No Voice",
-        "Non-verbal Communication": "Facial Expressions, Movement and Gesture",
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Movement and Gesture",
         "Outcome": "Individual Well-Being"
     },
     {
@@ -252,7 +282,8 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Head only",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Eye Gaze, Lip Syncing",
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Eye Gaze, Lip Syncing",
         "Outcome": "Presence"
     },
     {
@@ -265,10 +296,12 @@
         "Platform Type": "Desktop-Tool",
         "Meeting Size": "Dyad",
         "Avatar Generation": "Reconstructed Model Avatar",
-        "Visualization Type": "Cartoon, Realistic, Other Person",
+        "Visualization Type": "Multiple",
+        "Visualization_type_note": "Cartoon, Realistic, Other Person",
         "Avatar Embodiment": "Head only",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Movement and Gesture, Eye Gaze, Eye Blink, Lip Syncing",
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Movement and Gesture, Eye Gaze, Eye Blink, Lip Syncing",
         "Outcome": "Presence"
     },
     {
@@ -284,7 +317,8 @@
         "Visualization Type": "Realistic",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Movement and Gesture, Eye Gaze, Lip Syncing",
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Movement and Gesture, Eye Gaze, Lip Syncing",
         "Outcome": "Individual Well-Being"
     },
     {
@@ -295,13 +329,16 @@
         "DOI_URL": "https://doi.org/10.1109/TALE56641.2023.10398392",
         "Meeting Environment": "Educational",
         "Platform Type": "Extended-Reality",
-        "Meeting Size": "Dyad, Small (3-5 People)",
+        "Meeting Size": "Multiple",
+        "Meeting_size_note": "Dyad, Small (3-5 People)",
         "Avatar Generation": "User-Created Avatar",
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Movement and Gesture, Eye Gaze, Lip Syncing",
-        "Outcome": "Presence, Individual Well-Being"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Movement and Gesture, Eye Gaze, Lip Syncing",
+        "Outcome": "Multiple",
+        "Outcome_note": "Presence, Individual Well-Being"
     },
     {
         "id": 20,
@@ -309,14 +346,17 @@
         "Title": "Real-and-Present: Investigating the Use of Life-Size 2D Video Avatars in HMD-Based AR Teleconferencing",
         "Year": 2024,
         "DOI_URL": "https://doi.org/10.48550/arXiv.2401.02171",
-        "Meeting Environment": "Professional, Private",
+        "Meeting Environment": "Multiple",
+        "Meeting_environment_note": "Professional, Private",
         "Platform Type": "Extended-Reality",
-        "Meeting Size": "Dyad, Small (3-5 People)",
+        "Meeting Size": "Multiple",
+        "Meeting_size_note":"Dyad, Small (3-5 People)",
         "Avatar Generation": "Reconstructed Model Avatar",
-        "Visualization Type": "Cartoon, Realistic",
+        "Visualization Type": "Multiple",
+        "Visualization_type_note":"Cartoon, Realistic",
         "Avatar Embodiment": "Full Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Movement and Gesture",
+        "Non_verbal_communication": "Movement and Gesture",
         "Outcome": "Presence"
     },
     {
@@ -332,8 +372,9 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Movement and Gesture",
-        "Outcome": "Presence, Individual Well-Being"
+        "Non_verbal_communication": "Movement and Gesture",
+        "Outcome": "Multiple",
+        "Outcome_note": "Presence, Individual Well-Being"
     },
     {
         "id": 22,
@@ -348,8 +389,10 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Movement and Gesture",
-        "Outcome": "Presence, Individual Well-Being"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Movement and Gesture",
+        "Outcome": "Multiple",
+        "Outcome_note": "Presence, Individual Well-Being"
     },
     {
         "id": 23,
@@ -364,7 +407,7 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Full Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Movement and Gesture",
+        "Non_verbal_communication": "Movement and Gesture",
         "Outcome": "Engagement"
     },
     {
@@ -380,7 +423,8 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Full Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Movement and Gesture",
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Movement and Gesture",
         "Outcome": "Presence"
     },
     {
@@ -396,8 +440,10 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Eye Blink, Lip Syncing",
-        "Outcome": "Social Anxiety, Individual Well-Being"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Eye Blink, Lip Syncing",
+        "Outcome": "Multiple",
+        "Outcome_note": "Social Anxiety, Individual Well-Being"
     },
     {
         "id": 26,
@@ -412,8 +458,10 @@
         "Visualization Type": "Realistic",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Movement and Gesture, Eye Gaze",
-        "Outcome": "Engagement, Social Anxiety, Presence"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Movement and Gesture, Eye Gaze",
+        "Outcome": "Multiple",
+        "Outcome_note": "Engagement, Social Anxiety, Presence"
     },
     {
         "id": 27,
@@ -421,15 +469,19 @@
         "Title": "Exploring the Influence of Virtual Avatar Heads in Mixed Reality on Social Presence, Performance and User Experience in Collaborative Tasks",
         "Year": 2024,
         "DOI_URL": "https://doi.org/10.1109/TVCG.2024.3372051",
-        "Meeting Environment": "Professional, Private",
+        "Meeting Environment": "Multiple",
+        "Meeting_environment_note":"Professional, Private",
         "Platform Type": "Extended-Reality",
         "Meeting Size": "Dyad",
         "Avatar Generation": "User-Created Avatar",
-        "Visualization Type": "Cartoon, Realistic",
+        "Visualization Type": "Multiple",
+        "Visualization_type_note":"Cartoon, Realistic",
         "Avatar Embodiment": "Head only",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Movement and Gesture, Eye Gaze, Eye Blink, Lip Syncing",
-        "Outcome": "Engagement, Presence, Individual Well-Being"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Movement and Gesture, Eye Gaze, Eye Blink, Lip Syncing",
+        "Outcome": "Multiple",
+        "Outcome_note": "Engagement, Presence, Individual Well-Being"
     },
     {
         "id": 28,
@@ -438,14 +490,18 @@
         "Year": 2024,
         "DOI_URL": "https://doi.org/10.1109/TLT.2024.3352743",
         "Meeting Environment": "Educational",
-        "Platform Type": "Desktop-Tool, Extended-Reality",
+        "Platform Type": "Multiple",
+        "Platform_type_note":"Desktop-Tool, Extended-Reality",
         "Meeting Size": "Small (3-5 People)",
         "Avatar Generation": "Reconstructed Model Avatar",
         "Visualization Type": "Cartoon",
-        "Avatar Embodiment": "Full Body, Upper Body",
+        "Avatar Embodiment": "Multiple",
+        "Avatar_embodiment_note": "Full Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Movement and Gesture, Eye Gaze",
-        "Outcome": "Engagement, Presence"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Movement and Gesture, Eye Gaze",
+        "Outcome": "Multiple",
+        "Outcome_note": "Engagement, Presence"
     },
     {
         "id": 29,
@@ -460,8 +516,9 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Movement and Gesture",
-        "Outcome": "Engagement, Presence"
+        "Non_verbal_communication": "Movement and Gesture",
+        "Outcome": "Multiple",
+        "Outcome_note": "Engagement, Presence"
     },
     {
         "id": 30,
@@ -476,7 +533,8 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Full Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Movement and Gesture, Facial Expressions, Lip Syncing, Eye Blink",
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Movement and Gesture, Facial Expressions, Lip Syncing, Eye Blink",
         "Outcome": "Presence"
     },
     {
@@ -492,8 +550,9 @@
         "Visualization Type": "Realistic",
         "Avatar Embodiment": "Full Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Movement and Gesture",
-        "Outcome": "Engagement, Presence"
+        "Non_verbal_communication": "Movement and Gesture",
+        "Outcome": "Multiple",
+        "Outcome_note":"Engagement, Presence"
     },
     {
         "id": 32,
@@ -508,7 +567,9 @@
         "Visualization Type": "Cartoon",
         "Avatar Embodiment": "Upper Body",
         "Verbal Communication": "Natural Voice",
-        "Non-verbal Communication": "Facial Expressions, Movement and Gesture",
-        "Outcome": "Engagement, Social Anxiety, Individual Well-Being"
+        "Non_verbal_communication": "Multiple",
+        "Non_verbal_communication_note": "Facial Expressions, Movement and Gesture",
+        "Outcome": "Multiple",
+        "Outcome_note": "Engagement, Social Anxiety, Individual Well-Being"
     }
 ]
