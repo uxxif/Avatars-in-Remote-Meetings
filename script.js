@@ -73,6 +73,13 @@ function renderTable(data) {
             Meeting_environment_note_display = paper.Meeting_environment_note;
         }
 
+        // "Platform_type_note"
+        if (paper.Platform_type_note === undefined) {
+            Platform_type_note_display = "";
+        } else {
+            Platform_type_note_display = paper.Platform_type_note;
+        }
+
         // "Meeting_size_note"
         if (paper.Meeting_size_note === undefined) {
             Meeting_size_note_display = "";
@@ -87,13 +94,6 @@ function renderTable(data) {
             Visualization_type_note_display = paper.Visualization_type_note;
         }
 
-        // "Platform_type_note"
-        if (paper.Platform_type_note === undefined) {
-            Platform_type_note_display = "";
-        } else {
-            Platform_type_note_display = paper.Platform_type_note;
-        }
-
         // "Non-verbal Communication"
         if (paper.Non_verbal_communication_note === undefined) {
             Non_verbal_communication_note_display = "";
@@ -101,6 +101,7 @@ function renderTable(data) {
             Non_verbal_communication_note_display = paper.Non_verbal_communication_note;
         }
 
+        // "Outcome_note"
         if (paper.Outcome_note === undefined) {
             Outcome_note_display = "";
         } else {
@@ -113,9 +114,9 @@ function renderTable(data) {
         <td>${paper.Title}</td>
         <td><a href="${paper.DOI_URL}" target="_blank">${displayDOI}</a></td>
         <td>${Meeting_environment_note_display}</td>
+        <td>${Platform_type_note_display}</td>
         <td>${Meeting_size_note_display}</td>
         <td>${Visualization_type_note_display}</td>
-        <td>${Platform_type_note_display}</td>
         <td>${Non_verbal_communication_note_display}</td>
         <td>${Outcome_note_display}</td>
       </tr>
@@ -272,86 +273,52 @@ function adjustFilterButtonsWidth() {
 
 // Disable buttons that lead to empty list
 function updateDisabledButtons() {
+    // Wenn keine Filter aktiv → keine Buttons deaktivieren
+    const activeFiltersExist = document.querySelector('.filter-btn.active');
+    if (!activeFiltersExist) {
+        document.querySelectorAll('.button-disabled').forEach(btn =>
+            btn.classList.remove('button-disabled')
+        );
+        return;
+    }
+
     const filterButtons = document.querySelectorAll('.filter-btn');
 
     filterButtons.forEach((button) => {
-        const filterGroup = button.closest('.filter-group');
-        const key = filterGroup.querySelector('.filter-key').textContent;
-        const value = button.textContent;
-
-        // Temporarily toggle this button's filter
         const isActive = button.classList.contains('active');
         button.classList.toggle('active');
 
-        const appliedFilters = Array.from(document.querySelectorAll('.filter-group')).reduce((acc, filterGroup) => {
-            const key = filterGroup.querySelector('.filter-key').textContent;
-            const activeValues = Array.from(filterGroup.querySelectorAll('.filter-btn.active')).map((btn) => btn.textContent);
-            if (activeValues.length > 0) {
-                acc[key] = activeValues;
-            }
+        // Aktuelle aktive Filter ermitteln
+        const appliedFilters = Array.from(document.querySelectorAll('.filter-group')).reduce((acc, fg) => {
+            const key = fg.querySelector('.filter-key').textContent;
+            const activeValues = Array.from(fg.querySelectorAll('.filter-btn.active')).map(btn => btn.textContent);
+            if (activeValues.length > 0) acc[key] = activeValues;
             return acc;
         }, {});
 
+        // Daten filtern mit Multi-Value Support
         const filteredData = originalData.filter((paper) => {
-
-           // console.log(paper[key]);
-            const valuefd = paper[key];
-            if ( /[,]/.test(valuefd)) {
-
-                const values = valuefd.split(',');
-              //  console.log(values);
-                const appliedfilterkeys = Object.keys(appliedFilters);
-                return Object.keys(appliedFilters).forEach(function (key) {
-                //    console.log(appliedFilters[key]);
-                    const afk2 = appliedFilters[key];
-                //    console.log("checker");
-                //    console.log(afk2);
-                    for (var value2=0; value2 < values.length; value2++){
-                  //      console.log("wir wollen jetzt checken ob werte gleich und wenn ja disablen");
-                        for (var afk = 0; afk < afk2.length; afk++){
-                     //       console.log(afk2[afk])
-                     //       console.log(values[value2])
-
-                       // if (afk2[afk] === values[value2]){
-                        //          console.log("halo jetzt richtig");
-                        //          console.log(button)
-                            //      const isfilterneeded = true;
-                                //  btnKeyArrayFD.set(values[value2], isfilterneeded);
-                                  return afk2[afk] === values[value2];
-                                  //button.classList.remove("button-disabled");
-                           //   }
-                            }
-                    }
-                    // Will be an array
-                 });
-
-
-              }
-             else{
-
-                return Object.keys(appliedFilters).every((key) => {
-                //    console.log("normal");
-                //    console.log(key);
-                //    console.log(appliedFilters[key]);
-                //    console.log(paper[key]);
-                    return appliedFilters[key].includes(paper[key]);
-
-        });
-    }
-
+            return Object.keys(appliedFilters).every((filterKey) => {
+                const paperValue = (paper[filterKey] || '').toString();
+                const paperValuesArray = paperValue.includes(',')
+                    ? paperValue.split(',').map(v => v.trim())
+                    : [paperValue.trim()];
+                return appliedFilters[filterKey].some(filterVal => paperValuesArray.includes(filterVal));
+            });
         });
 
-        // Revert this button's filter
+        // Toggle zurücksetzen
         button.classList.toggle('active');
 
+        // Button deaktivieren, wenn er keine Ergebnisse hervorbringen würde
         if (filteredData.length === 0 && !isActive) {
-            button.classList.add("button-disabled");
+            button.classList.add('button-disabled');
         } else {
-            button.classList.remove("button-disabled");
+            button.classList.remove('button-disabled');
         }
-
     });
 }
+
 
 // Highlight hovered row
 function highlightFilters(rowData) {

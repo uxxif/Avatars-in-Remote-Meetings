@@ -204,3 +204,44 @@ br {
 .tools-table-wrap { overflow:auto; }
 .sortable { cursor:pointer; }
 .sortable:after { content:" ↕"; font-weight:normal; color:#999; }
+
+/* --- TABLE LAYOUT FIX --- */
+
+#table-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#papers-table {
+    width: 95%;                 /* viel breiter als vorher */
+    max-width: 1500px;          /* verhindert Überdehnung auf sehr breiten Monitoren */
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+#papers-table th,
+#papers-table td {
+    padding: 10px 14px;         /* mehr Innenabstand = bessere Lesbarkeit */
+    text-align: left;
+    vertical-align: top;
+    white-space: normal;        /* erlaubt Umbruch statt Quetschen */
+}
+
+#papers-table th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
+
+/* Falls Spalten immer noch zu eng → automatische Breite aktivieren */
+#papers-table {
+    table-layout: auto;
+}
+
+/* Optional: Hover-Zeilenhighlight (wirkt professionell) */
+#papers-table tbody tr:hover {
+    background-color: #fafafa;
+}
